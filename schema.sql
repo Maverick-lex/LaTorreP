@@ -53,10 +53,10 @@ create table assistance(
 
 create table DocExcel(
 	Id int not null,
-	Nombre varchar(50) no null,
+	Nombre varchar(50) not null,
 	Horario date not null,
-	Estado varchar(10) no null,
-	NvoEstado varchar(20) no null,
-	Excepcion varchar(30) no null
+	Estado varchar(10) not null,
+	NvoEstado varchar(20) not null,
+	Excepcion varchar(30) not null
 );
 
