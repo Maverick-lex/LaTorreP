@@ -1,5 +1,5 @@
-create database LaTorre;
-use LaTorre; 
+create database latorre;
+use latorre; 
 
 create table user (
 	id int not null auto_increment primary key,

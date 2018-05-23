@@ -33,7 +33,7 @@
         echo '<td>'. $Excepcion.'</td>';
 		echo '</tr>';
 		
-		$sql = "INSERT INTO productos (Id, Nombre, Estado, NvoEstado, Excepcion) VALUES('$Id','$Nombre','$Estado','$NvoEstado','$Exepcion' )";
+		$sql = "INSERT INTO docexcel (Id, Nombre, Estado, NvoEstado, Excepcion) VALUES('$Id','$Nombre','$Estado','$NvoEstado','$Exepcion' )";
 		$result = $mysqli->query($sql);
 	}
 	
