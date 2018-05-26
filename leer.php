@@ -14,7 +14,7 @@
 	
 	echo '<table border=1><tr><td>AC-No.</td><td>Nombre</td><td>Horario</td><td>Estado</td><td>NvoEstado</td><td>Excepción</td></tr>';
 	
-	for ($i = 1; $i <= $numRows; $i++) {
+	for ($i = 2; $i <= $numRows; $i++) {
 		
         $Id = $objPHPExcel->getActiveSheet()->getCell('A'.$i)->getCalculatedValue();
         $Nombre = $objPHPExcel->getActiveSheet()->getCell('C'.$i)->getCalculatedValue();
@@ -33,7 +33,7 @@
         echo '<td>'. $Excepcion.'</td>';
 		echo '</tr>';
 		
-		$sql = "INSERT INTO docexcel (Id, Nombre, Estado, NvoEstado, Excepcion) VALUES('$Id','$Nombre','$Estado','$NvoEstado','$Exepcion' )";
+		$sql = "INSERT INTO docexcel (Id, Nombre, Estado, NvoEstado, Excepcion) VALUES('$Id','$Nombre','$Estado','$NvoEstado','$Excepcion' )";
 		$result = $mysqli->query($sql);
 	}
 	

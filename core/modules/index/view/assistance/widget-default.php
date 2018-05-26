@@ -12,6 +12,8 @@
     <input type="hidden" name="team_id" value="<?php echo $_GET["team_id"];?>">
       <button type="submit" class="btn btn-primary">Buscar</button>
     </div>
+		
+
 
   </div>
 </form>
@@ -34,3 +36,21 @@
 		});
 	});
 </script>
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<div class="form-group">
+	<form action="file.php" method="post" enctype="multipart/form-data">
+	<input type="file" name="archivo" id="archivo"></input>
+	<input type="submit" value="Subir archivo"></input>
+</div>
+
+
+<form action="file.php" method="post" enctype="multipart/form-data">
